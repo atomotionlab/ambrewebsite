@@ -1,0 +1,36 @@
+/* Social Media Hover Effect */
+.social-media a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+     border-radius: 15px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-media span  {
+    transform: translateY(4px);
+    margin-right: 3px; /* Espace entre le texte et l'icône */
+}
+
+
+.social-media a:hover {
+    transform: translateY(5px); /* Effet de déplacement vers le haut */
+    background-color: #c7a1a8;
+    color: white;
+}
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}

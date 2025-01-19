@@ -1,0 +1,35 @@
+/* Images dans les sections */
+.intro-image img,
+.pink-section img {
+width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
+max-width: 400px; /* Largeur maximale de l'image */
+height: auto; /* Maintient les proportions */
+border-radius: 15px; /* Bordure arrondie */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet smooth */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.intro-image:hover img,
+.pink-section:hover img {
+  transform: scale(0.95); /* L'image se dézoome légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+}
+
+/* Alignement des sections avec image et texte */
+.intro,
+.pink-section {
+  display: flex; /* Met l'image et le texte côte à côte */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Espace égal entre texte et image */
+  gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.intro-text,
+.pink-section .content {
+  flex: 1.2; /* Donne plus d'espace au texte */
+}
+
+.intro-image,
+.pink-section img {
+  flex: 0.8; /* Réduit légèrement la largeur de l'image */
+}

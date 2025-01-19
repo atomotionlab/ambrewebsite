@@ -1,0 +1,34 @@
+/* Bouton Voir Plus */
+.see-more {
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fbe1e6;
+    color: #040527;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #eeabb6;
+    transform: translateX(5px); /* Animation de translation */
+}
+
+.show-more-btn span {
+    margin-left: 8px; /* Espace entre le texte et l'icône */
+}
+
+.show-more-btn:hover span {
+    transform: translateY(3px); /* Translation de l'icône au survol */
+    transition: transform 0.3s ease;
+}

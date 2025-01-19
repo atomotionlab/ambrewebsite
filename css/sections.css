@@ -1,0 +1,232 @@
+/* Section bannière */
+.banniere {
+  position: relative;
+    width: 100%;
+  height: 900px; /* Hauteur fixe pour la bannière */
+  overflow: hidden; /* Empêche tout débordement */
+  background-color: #116cc7; /* Couleur de fond en cas d'erreur de chargement */
+  padding-bottom: 20px;
+  margin-bottom: 120px;
+  display: flex; /* Permet un centrage simplifié */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+/* Vidéo de fond */
+  .video-background {
+  position: absolute;
+  top: 50%; /* Positionne la vidéo au centre vertical */
+  left: 50%; /* Positionne la vidéo au centre horizontal */
+  width: 100%; /* Occupe 30% de la largeur de la section */
+  height: auto; /* Ajuste la hauteur selon les proportions */
+  min-height: 400px; /* Garantit que la vidéo remplit toujours la hauteur */
+  max-height: 700px; /* Limite la hauteur */
+  object-fit: cover; /* Garde un bon cadrage en remplissant la zone définie */
+  transform: translate(-50%, -50%); /* Centre la vidéo parfaitement */
+  display: block;
+  border-radius: 15px; /* Ajout d'un arrondi pour les coins */
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.5); /* Effet de flou autour de la vidéo */
+}
+
+ 
+
+
+/* Contenu supplémentaire à ajouter sur la bannière, si nécessaire */
+.banniere-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.banniere .see-more {
+  position: absolute; /* Absolute positioning */
+  top: 750px; /* Distance from the top of the video */
+  left: 50%; /* Centering */
+  transform: translateX(-50%); /* Adjust to center */
+  z-index: 10; /* Ensure button is on top */
+}
+
+/* Bouton de la bannière */
+
+.show-more-btn2 {
+  display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #040527;
+    color: #fbe1e6;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+
+}
+
+.show-more-btn2:hover {
+  background-color: #fbe1e6;
+  color: #040527;
+    transform: translateX(5px); /* Animation de translation */
+}
+
+.show-more-btn2 span {
+  margin-left: 8px; /* Espace entre le texte et l'icône */
+}
+
+.show-more-btn2:hover span {
+  transform: translateY(3px); /* Translation de l'icône au survol */
+  transition: transform 0.3s ease;
+}
+
+
+
+section:not(.contact, .banniere) {
+  width: 100%;
+  margin: 0 auto 30px auto;
+  max-width: 1000px;
+  box-sizing: border-box; /* S'assure que la largeur inclut le padding et la bordure */
+
+}
+
+@media (max-width: 768px) {
+  section:not(.contact, .banniere) {
+    max-width: 100%; /* Permet à la section de remplir toute la largeur sur mobile */
+  }
+}
+
+
+  
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+/* Section générale */
+.pink-section {
+  display: flex; /* Positionne texte et image côte à côte */
+  align-items: center; /* Aligne verticalement au centre */
+  justify-content: space-between; /* Écarte texte et image */
+  gap: 50px; /* Espacement entre texte et image */
+  padding: 40px; /* Respiration intérieure */
+  background: #fbe1e6; /* Couleur de fond */
+  border-radius: 40px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Contenu texte */
+.pink-section .content {
+  flex: 1; /* Le texte occupe une part égale avec l'image */
+  max-width: 60%; /* Largeur maximale pour le texte */
+}
+
+.pink-section .content span {
+  padding-left: 10px;
+  flex: 1; /* Le texte occupe une part égale avec l'image */
+  max-width: 60%; /* Largeur maximale pour le texte */
+}
+
+.pink-section .content h1 {
+  font-size: 2.4rem; /* Taille du titre */
+  margin-bottom: 40px; /* Espacement sous le titre */
+  color: #333; /* Couleur du texte */
+  font-weight: bold;
+  line-height: 1; /* Interligne */
+
+  
+}
+
+.pink-section .content h2 {
+  font-size: 3rem; /* Taille du titre */
+  margin-bottom: 40px; /* Espacement sous le titre */
+  color: #333; /* Couleur du texte */
+  font-weight: bold;
+  
+}
+
+.pink-section .content p {
+  font-size: 1rem; /* Taille des paragraphes */
+  line-height: 1.6; /* Interligne */
+  margin-bottom: 20px; /* Espacement sous chaque paragraphe */
+  color: #555; /* Couleur des paragraphes */
+}
+
+/* Liste des puces */
+.pink-section .content ul {
+  list-style-type: disc; /* Puces classiques */
+  padding-left: 20px; /* Indentation de la liste */
+  color: #555; /* Couleur des puces */
+}
+
+.pink-section .content ul li {
+  margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  font-size: 1rem; /* Taille du texte des puces */
+  line-height: 1.4; /* Hauteur de ligne */
+}
+
+/* Image */
+.pink-section img {
+  flex: 1; /* Image occupe une part égale avec le texte */
+  max-width: 40%; /* Largeur maximale de l'image */
+  height: auto; /* Conserve les proportions */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+
+
+/* Images dans les sections */
+.intro-image img,
+.pink-section img {
+width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
+max-width: 400px; /* Largeur maximale de l'image */
+height: auto; /* Maintient les proportions */
+border-radius: 15px; /* Bordure arrondie */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet smooth */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.intro-image:hover img,
+.pink-section:hover img {
+  transform: scale(0.95); /* L'image se dézoome légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+}
+
+/* Alignement des sections avec image et texte */
+.intro,
+.pink-section {
+  display: flex; /* Met l'image et le texte côte à côte */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Espace égal entre texte et image */
+  gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.intro-text,
+.pink-section .content {
+  flex: 1.5; /* Donne plus d'espace au texte */
+  text-align: left; /* Texte aligné à droite */
+  padding-left: 20px;
+}
+
+.intro-image,
+.pink-section img {
+  flex: .8; /* Réduit légèrement la largeur de l'image */
+}
+
+/*Prestations*/
+
+/* Inversion pour une autre section */
+.pink-section.reverse {
+  flex-direction: row-reverse; /* Met l'image à gauche */
+}
+
+/* Ajustement pour l'alignement */
+.pink-section.reverse .content {
+  text-align: left; /* Texte aligné à droite */
+  padding-left: 20px;
+}

@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .intro,
+  .pink-section {
+    padding: 20px;
+    background: #fbe1e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Images dans les sections */
+.intro-image img,
+.pink-section img {
+  width: 100%; /* S'assure que l'image occupe tout l'espace disponible */
+  max-width: 400px; /* Largeur maximale de l'image */
+  height: auto; /* Maintient les proportions */
+  border-radius: 15px; /* Bordure arrondie */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet smooth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.intro-image:hover img,
+.pink-section:hover img {
+  transform: scale(0.95); /* L'image se dézoome légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+}
+
+/* Alignement des sections avec image et texte */
+.intro,
+.pink-section {
+  display: flex; /* Met l'image et le texte côte à côte */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Espace égal entre texte et image */
+  gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.intro-text,
+.pink-section .content {
+  flex: 1; /* Texte prend la moitié de l'espace */
+}
+
+.intro-image,
+.pink-section img {
+  flex: 1; /* Image prend la moitié de l'espace */
+  text-align: center;
+}
+
+  
+  .pink-section {
+    background: #fbe1e6;
+  }
+  
+  .tarifs-container {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .tarif-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+  }
+  
+  .tarif-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    .tarifs-container {
+      grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
+    }
+  }
+  
+  #contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Bouton Voir Plus */
+.see-more {
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00abf0;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #008ac8;
+    transform: translateX(5px); /* Animation de translation */
+}
+
+.show-more-btn span {
+    margin-left: 8px; /* Espace entre le texte et l'icône */
+}
+
+.show-more-btn:hover span {
+    transform: translateX(3px); /* Translation de l'icône au survol */
+    transition: transform 0.3s ease;
+}
+
+/*#profile-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom : 20px;
+}
+
+#profile-link:hover {
+    background-color: #e76f51;
+}
+
+/* Social Media Hover Effect */
+.social-media a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+     border-radius: 15px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-media span  {
+    transform: translateY(4px);
+    margin-right: 3px; /* Espace entre le texte et l'icône */
+}
+
+
+.social-media a:hover {
+    transform: translateY(5px); /* Effet de déplacement vers le haut */
+    background-color: #c7a1a8;
+    color: white;
+
+
+ .   
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+footer .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
