@@ -4,7 +4,7 @@
     width: 100%;
   height: 900px; /* Hauteur fixe pour la bannière */
   overflow: hidden; /* Empêche tout débordement */
-  background-color: #116cc7; /* Couleur de fond en cas d'erreur de chargement */
+  background-color: #f5f6f7; /* Couleur de fond en cas d'erreur de chargement */
   padding-bottom: 20px;
   margin-bottom: 120px;
   display: flex; /* Permet un centrage simplifié */
