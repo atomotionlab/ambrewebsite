@@ -57,7 +57,13 @@ tr:last-child td {
   border-bottom: none; /* Remove border from last row */
 }
 
-  
+.comment {
+  font-size: 0.8rem; /* Taille de police plus petite */
+  color: #666; /* Couleur grise pour le texte des commentaires */
+  padding-top: 5px; /* Espacement au-dessus du commentaire */
+  padding-bottom: 15px; /* Espacement en dessous, pour éviter la barre rose */
+  border-bottom: none; /* Pas de bordure pour les commentaires */
+}
   
 
   /* Espace  le texte et l'icône .tarifs-container {
