@@ -1,5 +1,23 @@
+/* Media query pour les écrans de 375px à 667px */
+@media screen and (max-width: 375px) {
+  body {
+      font-size: 14px; /* Réduire la taille de police */
+  }
+
+  .contact-section {
+      margin-top: 20px; /* Ajuster l'espacement si nécessaire */
+  }
+}
+
+
 /* Responsive styles header */
-@media (max-width: 768px) {
+@media (max-width: 667px) {
+
+     body {
+        font-size: 16px; /* Taille de police normale */
+    }
+
+
   /* Masquer la phrase de déplacement */
   .top-bar p {
     display: none;
@@ -25,11 +43,17 @@
     align-items: center;
     width: 100%;
     height: 100px;
+    text-align: center; /* Centre le texte */
   }
 
   nav > ul {
     align-items: center;    
   }
+
+  header nav a {
+    padding: 10px 0; /* Ajoute un peu d'espace autour des liens */
+}
+
 }
 
 /* Responsiveness */
@@ -61,6 +85,11 @@
       margin: 10px auto;
       width: 80%;
   }
+
+  #footer p {
+    justify-content: center; /* Recentre le footer sur mobile */
+    padding: 0;
+  }
 }
 
 
@@ -70,7 +99,7 @@
 @media (max-width: 768px) {
 /* Bannière */
 .banniere {
-  height: 500px; /* Ajuste la hauteur pour les tablettes */
+  height: 50vh; /* Ajuste la hauteur pour les tablettes */
 }
 
 .video-background {
@@ -81,6 +110,7 @@
   min-height: 100px; /* Garantit que la vidéo remplit toujours la hauteur */
   max-height: 300px; /* Limite la hauteur */
   object-fit: cover; /* Garde un bon cadrage en remplissant la zone définie */
+   z-index: 1; /* Assurez-vous que la vidéo soit en dessous */
 }
 
 .video-background video {
@@ -88,10 +118,26 @@
 }
 
 .banniere .see-more {
-  top: 380px; /* Position légèrement ajustée */
+  top: 450px; /* Position légèrement ajustée */
+ 
+  z-index: 2; /* Assurez-vous que le bouton soit au-dessus de la vidéo */
+   
 }
 
 /* Section pink-section */
+
+#accueil {
+  width: 90%; /* Limite la largeur à 90% sur mobile */
+  margin: 0 auto; /* Centre la section */
+}
+
+
+footer {
+  text-align: center; /* Centre le texte du footer */
+}
+
+
+
 .pink-section, .pink-section.reverse {
     flex-direction: column; /* Passe le texte en dessous de l'image */
     align-items: center;
@@ -100,18 +146,10 @@
     gap: 20px; /* Réduit l'espacement entre les éléments */
     padding: 20px; /* Moins d'espace intérieur */
     
-  }
-
-  .pink-section {
-    max-width: 80%;
-    flex-direction: column; /* Passe le texte en dessous de l'image */
-    align-items: center;
-    text-align: center; /* Centrer le texte */
-    width: 70%;
-    gap: 20px; /* Réduit l'espacement entre les éléments */
-    padding: 20px; /* Moins d'espace intérieur */
     
   }
+
+
 
   .intro-text,
   .pink-section .content {
@@ -166,6 +204,8 @@
   min-height: 100px; /* Garantit que la vidéo remplit toujours la hauteur */
   max-height: 300px; /* Limite la hauteur */
   object-fit: cover; /* Garde un bon cadrage en remplissant la zone définie */
+  position: relative; /* Définit la position relative pour le conteneur de la vidéo */
+  z-index: 1; /* Assurez-vous que la vidéo soit en dessous */
 }
 
 .video-background video {
@@ -173,7 +213,10 @@
 }
 
 .banniere .see-more {
-  top: 470px; /* Position légèrement ajustée */
+  top: 370px; /* Position légèrement ajustée */
+  position: relative; /* Position relative pour le bouton */
+  z-index: 2; /* Assurez-vous que le bouton soit au-dessus de la vidéo */
+  top: 450px; /* Ajustez selon vos besoins */
 }
 
 /* Section pink-section */
